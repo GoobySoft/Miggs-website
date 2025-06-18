@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD - Bioinformatics Researcher</title>
+    <meta name="description" content="Portfolio of Mick Dahlhaus, a bioinformatics researcher specializing in computational biology, genomics & machine learning.">
+    <link rel="stylesheet" href="./css/out.css">
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2d24;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a6b52;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b9474;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-green-950 text-dark-green-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-green-950/90 backdrop-blur-sm border-b border-dark-green-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="/" class="text-xl font-bold text-dark-green-200 hover:text-white transition-colors">
+                        Mick Dahlhaus
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="/#home" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="/#cv" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">CV</a>
+                        <a href="/#contact" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <a href="projects.html" class="bg-accent-red-600 hover:bg-accent-red-500 text-white px-4 py-2 rounded-lg font-medium transition-colors shadow-lg">
+                            Projects
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark-green-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-dark-green-900 border-t border-dark-green-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">Home</a>
+                <a href="#cv" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">CV</a>
+                <a href="#contact" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">Contact</a>
+                <a href="projects.html" class="block px-3 py-2 text-accent-red-500 hover:text-accent-red-400 transition-colors">Projects</a>     
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Header -->
+    <section class="pt-24 pb-12 bg-dark-green-900/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-6">Research Projects</h1>
+            <p class="text-xl text-dark-green-300 max-w-3xl mx-auto">
+                Explore my computational biology research through interactive notebooks, tools, and publications. 
+                Each project includes code repositories, data analysis workflows, and research findings.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Machine Learning Projects -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-white mb-8 border-b border-accent-red-600 pb-2">Projects</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    
+                    <div class="bg-dark-green-800/50 rounded-lg p-6 hover:bg-dark-green-800/70 transition-colors border border-dark-green-700 hover:border-accent-red-600">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="w-12 h-12 bg-accent-red-600 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+                                </svg>
+                            </div>
+                            <span class="bg-accent-red-600/20 text-accent-red-400 px-2 py-1 rounded text-xs font-medium">Featured</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">GenomeML: Variant Classification</h3>
+                        <p class="text-dark-green-300 mb-4">
+                            Deep learning pipeline for genomic variant classification using ensemble methods and attention mechanisms.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">Python</span>
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">TensorFlow</span>
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">Genomics</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://github.com/sarahchen/genomeml" target="_blank" class="flex items-center text-dark-green-400 hover:text-accent-red-400 font-medium transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                                GitHub Repository
+                            </a>
+                            <a href="https://colab.research.google.com/drive/genomeml-analysis" target="_blank" class="flex items-center text-dark-green-400 hover:text-accent-red-400 font-medium transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+                                </svg>
+                                Jupyter Notebook
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-dark-green-800/50 rounded-lg p-6 hover:bg-dark-green-800/70 transition-colors border border-dark-green-700 hover:border-accent-red-600">
+                        <div class="w-12 h-12 bg-dark-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M3,3H21V21H3V3M5,5V19H19V5H5M7.5,18A1.5,1.5 0 0,0 9,16.5A1.5,1.5 0 0,0 7.5,15A1.5,1.5 0 0,0 6,16.5A1.5,1.5 0 0,0 7.5,18M7.5,13A1.5,1.5 0 0,0 9,11.5A1.5,1.5 0 0,0 7.5,10A1.5,1.5 0 0,0 6,11.5A1.5,1.5 0 0,0 7.5,13M7.5,8A1.5,1.5 0 0,0 9,6.5A1.5,1.5 0 0,0 7.5,5A1.5,1.5 0 0,0 6,6.5A1.5,1.5 0 0,0 7.5,8M16.5,15H11V17H16.5V15M16.5,10H11V12H16.5V10M16.5,5H11V7H16.5V5Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">ProteinFold: Structure Prediction</h3>
+                        <p class="text-dark-green-300 mb-4">
+                            Transformer-based model for protein secondary structure prediction using attention mechanisms.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">PyTorch</span>
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">Transformers</span>
+                            <span class="bg-dark-green-700 text-dark-green-200 px-2 py-1 rounded text-sm">Proteins</span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://github.com/sarahchen/proteinfold" target="_blank" class="flex items-center text-dark-green-400 hover:text-accent-red-400 font-medium transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                                GitHub Repository
+                            </a>
+                            <a href="https://colab.research.google.com/drive/proteinfold-demo" target="_blank" class="flex items-center text-dark-green-400 hover:text-accent-red-400 font-medium transition-colors">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+                                </svg>
+                                Interactive Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications & Resources -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-8 border-b border-accent-red-600 pb-2">Research</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    
+                    <div class="bg-dark-green-800/50 rounded-lg p-6 border border-dark-green-700">
+                        <h3 class="text-xl font-bold text-white mb-4">Recent Publications</h3>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-accent-red-600 pl-4">
+                                <h4 class="font-semibold text-white">Deep Learning for Genomic Variant Classification</h4>
+                                <p class="text-dark-green-300 text-sm">Nature Genetics, 2023</p>
+                                <a href="https://doi.org/10.1038/s41588-023-01234-5" target="_blank" class="text-dark-green-400 hover:text-accent-red-400 text-sm transition-colors">View Publication →</a>
+                            </div>
+                            <div class="border-l-4 border-dark-green-600 pl-4">
+                                <h4 class="font-semibold text-white">Attention-Based Models for Protein Function</h4>
+                                <p class="text-dark-green-300 text-sm">Bioinformatics, 2022</p>
+                                <a href="https://doi.org/10.1093/bioinformatics/btac123" target="_blank" class="text-dark-green-400 hover:text-accent-red-400 text-sm transition-colors">View Publication →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-green-950 border-t border-dark-green-800 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-dark-green-400">
+                &copy; 2025 Mick Dahlhaus. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

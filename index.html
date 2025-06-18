@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD - Bioinformatics Researcher</title>
+    <meta name="description" content="Portfolio of Mick Dahlhaus, a bioinformatics researcher specializing in computational biology, genomics & machine learning.">
+    <link rel="stylesheet" href="./css/out.css">
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2d24;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a6b52;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6b9474;
+        }
+    </style>
+</head>
+
+<body class="bg-dark-green-950 text-dark-green-50 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-green-950/90 backdrop-blur-sm border-b border-dark-green-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-dark-green-200 hover:text-white transition-colors">
+                        Mick Dahlhaus
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#cv" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">CV</a>
+                        <a href="#contact" class="nav-link text-dark-green-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors">Contact</a>
+                        <a href="projects.html" class="bg-accent-red-600 hover:bg-accent-red-500 text-white px-4 py-2 rounded-lg font-medium transition-colors shadow-lg">
+                            Projects
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-dark-green-300 hover:text-white focus:outline-none focus:text-white">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-dark-green-900 border-t border-dark-green-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">Home</a>
+                <a href="#cv" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">CV</a>
+                <a href="#contact" class="block px-3 py-2 text-dark-green-300 hover:text-white transition-colors">Contact</a>
+                <a href="projects.html" class="block px-3 py-2 text-accent-red-500 hover:text-accent-red-400 transition-colors">Projects</a>     
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+<section id="home" class="relative overflow-hidden -mt-10">
+
+    <!-- Background video (fixed behind everything) -->
+    <video id="bg-video"
+           autoplay
+           muted
+           loop
+           playsinline
+           class="absolute inset-0 w-full h-full object-cover opacity-10 grayscale pointer-events-none z-0">
+        <source src="media/blob_l.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Foreground content -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center">
+        <div class="mb-8">
+            <div class="w-32 h-32 mx-auto mb-6 bg-dark-green-800 rounded-full flex items-center justify-center">
+                <svg class="w-16 h-16 text-dark-green-400" fill="currentColor" viewBox="0 0 448 512">
+                    <path d="M416 0c17.7 0 32 14.3 32 32c0 59.8-30.3 107.5-69.4 146.6c-28 28-62.5 53.5-97.3 77.4l-2.5 1.7c-11.9 8.1-23.8 16.1-35.5 23.9c0 0 0 0 0 0s0 0 0 0s0 0 0 0l-1.6 1c-6 4-11.9 7.9-17.8 11.9c-20.9 14-40.8 27.7-59.3 41.5l118.5 0c-9.8-7.4-20.1-14.7-30.7-22.1l7-4.7 3-2c15.1-10.1 30.9-20.6 46.7-31.6c25 18.1 48.9 37.3 69.4 57.7C417.7 372.5 448 420.2 448 480c0 17.7-14.3 32-32 32s-32-14.3-32-32L64 480c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-59.8 30.3-107.5 69.4-146.6c28-28 62.5-53.5 97.3-77.4c-34.8-23.9-69.3-49.3-97.3-77.4C30.3 139.5 0 91.8 0 32C0 14.3 14.3 0 32 0S64 14.3 64 32l320 0c0-17.7 14.3-32 32-32zM338.6 384l-229.2 0c-10.1 10.6-18.6 21.3-25.5 32l280.2 0c-6.8-10.7-15.3-21.4-25.5-32zM109.4 128l229.2 0c10.1-10.7 18.6-21.3 25.5-32L83.9 96c6.8 10.7 15.3 21.3 25.5 32zm55.4 48c18.4 13.8 38.4 27.5 59.3 41.5c20.9-14 40.8-27.7 59.3-41.5l-118.5 0z"/>                    
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-semibold text-white mb-4">Mick Dahlhaus</h1>
+            <p class="text-xl tracking-wide -mt-4 mb-6">Bioinformatics Researcher &#11045; Data Scientist</p>
+            <p class="text-lg text-dark-green-300 max-w-2xl mx-auto leading-relaxed">
+                Bridging medical challenges through software
+            </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="projects.html"
+               class="bg-accent-red-600 hover:bg-accent-red-500 text-white px-8 py-3 rounded-lg font-medium transition-colors shadow-lg">
+                View Projects
+            </a>
+            <a href="#contact"
+               class="border border-dark-green-600 hover:bg-dark-green-600 hover:border-accent-red-500 text-dark-green-200 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                Get in Touch
+            </a>
+        </div>
+    </div>
+
+</section>
+
+    <!-- CV Section -->
+    <section id="cv" class="min-h-screen py-20 bg-dark-green-900/50 border-b border-dark-green-700">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 ">
+            <h2 class="text-3xl md:text-4xl font-semibold text-white mb-12 text-center tracking-widee">Curriculum Vitae</h2>
+            
+            <!-- Education -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-dark-green-200 mb-6 border-b border-dark-green-700 pb-2">Education</h3>
+                <div class="space-y-6">
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg border-l-4 border-accent-red-600">
+                        <h4 class="text-xl font-semibold text-white">M.S. in Bioinformatics</h4>
+                        <p class="text-dark-green-300">University of Birmingham • 2024 - Present</p>
+                        <p class="text-dark-green-400 mt-2">Genomics, Computational Biology & Machine Learning</p>
+                    </div>
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white">B.S. in Computer Science</h4>
+                        <p class="text-dark-green-300">FH Aachen • 2019-2023</p>
+                        <p class="text-dark-green-400 mt-2">Specialised in: Computer Vision and Autnomous Systems</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold text-dark-green-200 mb-6 border-b border-dark-green-700 pb-2">Experience</h3>
+                <div class="space-y-6">
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg border-l-4 border-accent-red-600">
+                        <h4 class="text-xl font-semibold text-white">Technical Lead Biobank in Pathology</h4>
+                        <p class="text-dark-green-300">University Hospital RWTH Aachen • 2025 - Present</p>
+                        <ul class="text-dark-green-400 mt-2 space-y-1">
+                            <li>&#11045 Contributing to research in pathology imaging, epigenetics, and pharmacogenomics</li>
+                            <li>&#11045 Developing software solutions for biobanking</li>
+                            <li>&#11045 Collaborating with researchers to secure grants</li>
+                        </ul>
+                    </div>
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white">First Technician</h4>
+                        <p class="text-dark-green-300">WDR • 2024 - 2025</p>
+                        <ul class="text-dark-green-400 mt-2 space-y-1">
+                            <li>&#11045 Innovation project focused on ultra-low latency wireless video transmission for live productions</li>
+                            <li>&#11045 Development of a system for measuring performance of distributed networks</li>
+                        </ul>
+                    </div>
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white">Lead Systems Architect</h4>
+                        <p class="text-dark-green-300">Allianz Stollenwerk • 2023 - 2024</p>
+                        <ul class="text-dark-green-400 mt-2 space-y-1">
+                            <li>&#11045 Led an international team of developers</li>
+                            <li>&#11045 Backend development and conceptualization of a scalable serverless cloud infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="bg-dark-green-800/50 p-6 rounded-lg">
+                        <h4 class="text-xl font-semibold text-white">Cyber Security Consulting</h4>
+                        <p class="text-dark-green-300">KPMG • 2022 - 2023</p>
+                        <ul class="text-dark-green-400 mt-2 space-y-1">
+                            <li>&#11045 Performed IT security assessments for access management and cloud architectures</li>
+                            <li>&#11045 Focus on cryptographically secure virtualization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publications none yet :/
+            <div>
+                <h3 class="text-2xl font-bold text-dark-green-200 mb-6 border-b border-dark-green-700 pb-2">Publications</h3>
+                <div class="space-y-4">
+                    <div class="bg-dark-green-800/50 p-4 rounded-lg">
+                        <p class="text-white font-medium">-</p>
+                        <p class="text-dark-green-300 text-sm">-</p>
+                    </div>
+                    <div class="bg-dark-green-800/50 p-4 rounded-lg">
+                        <p class="text-white font-medium">-</p>
+                        <p class="text-dark-green-300 text-sm">-</p>
+                    </div>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-dark-green-900/50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Get in Touch</h2>
+            <p class="text-lg text-dark-green-300 mb-12 max-w-2xl mx-auto">
+                Interested in collaboration or have questions about my research?
+            </p>
+            
+            <div class="flex flex-col md:flex-row justify-center items-start gap-12 mb-12">
+                <!-- Email Block -->
+                <div class="flex-1 text-center">
+                    <div class="w-12 h-12 bg-dark-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Email</h3>
+                    <a href="mailto:mick.dahlhaus@proton.me" class="text-dark-green-300 hover:underline">mick.dahlhaus@proton.me</a>
+                </div>
+            </div>
+
+            <p class="text-sm text-dark-green-400">
+                &copy; 2025 Mick Dahlhaus. All rights reserved.
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const video = document.getElementById('bg-video');
+            if (!video) return;
+
+            /* playback-rate control parameters */
+            const DURATION = 5000;      // ms for full transition
+            const RATE_START = 0.6;     // 2× speed at load
+            const RATE_MIN   = 0.6;     // dip to half-speed
+            const RATE_END   = 0.6;     // settle at normal speed
+
+            /* custom cubic dip-and-rise curve */
+            function rateCurve(t) {
+                if (t < 0.5) {          // first half: 2.0 → 0.5
+                    return RATE_START - (RATE_START - RATE_MIN) *
+                        (1 - Math.pow(1 - t * 2, 3));
+                }
+                return RATE_MIN + (RATE_END - RATE_MIN) *
+                    Math.pow((t - 0.5) * 2, 3);   // second half: 0.5 → 1.0
+            }
+
+            function animateRate(ts) {
+                if (!animateRate.start) animateRate.start = ts;
+                const t = Math.min((ts - animateRate.start) / DURATION, 1);
+                video.playbackRate = rateCurve(t);
+                if (t < 1) requestAnimationFrame(animateRate);
+            }
+
+            /* kick off once the video can play */
+            const startAnimation = () => {
+                video.playbackRate = RATE_START;
+                requestAnimationFrame(animateRate);
+            };
+            if (video.readyState >= 2) {     // already decoded
+                startAnimation();
+            } else {
+                video.addEventListener('canplay', startAnimation, { once: true });
+            }
+        });
+    </script>
+
+</body>

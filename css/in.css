@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    
+    --color-dark-green-50: #f0f4f1;
+    --color-dark-green-100: #dce7de;
+    --color-dark-green-200: #b9d0be;
+    --color-dark-green-300: #8fb297;
+    --color-dark-green-400: #6b9474;
+    --color-dark-green-500: #4a6b52;
+    --color-dark-green-600: #3a5441;
+    --color-dark-green-700: #2f4336;
+    --color-dark-green-800: #26362c;
+    --color-dark-green-900: #1f2d24;
+    --color-dark-green-950: #0f1712;
+    
+    --color-accent-red-50: #fdf2f2;
+    --color-accent-red-100: #fce7e7;
+    --color-accent-red-200: #f9d3d3;
+    --color-accent-red-300: #f4b1b1;
+    --color-accent-red-400: #ec8888;
+    --color-accent-red-500: #dc5f5f;
+    --color-accent-red-600: #c73e3e;
+    --color-accent-red-700: #a73232;
+    --color-accent-red-800: #8b2d2d;
+    --color-accent-red-900: #742b2b;
+    --color-accent-red-950: #3f1313;
+    }
+
