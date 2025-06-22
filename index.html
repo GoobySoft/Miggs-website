@@ -30,7 +30,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="#home" class="text-xl font-bold text-dark-green-200 hover:text-white transition-colors">
+                    <a href="/index.html" class="text-xl font-bold text-dark-green-200 hover:text-white transition-colors">
                         Mick Dahlhaus
                     </a>
                 </div>
@@ -135,7 +135,7 @@
                 <h3 class="text-2xl font-bold text-dark-green-200 mb-6 border-b border-dark-green-700 pb-2">Experience</h3>
                 <div class="space-y-6">
                     <div class="bg-dark-green-800/50 p-6 rounded-lg border-l-4 border-accent-red-600">
-                        <h4 class="text-xl font-semibold text-white">Technical Lead Biobank in Pathology</h4>
+                        <h4 class="text-xl font-semibold text-white">Technical Lead Biobank</h4>
                         <p class="text-dark-green-300">University Hospital RWTH Aachen • 2025 - Present</p>
                         <ul class="text-dark-green-400 mt-2 space-y-1">
                             <li>&#11045 Contributing to research in pathology imaging, epigenetics, and pharmacogenomics</li>
@@ -197,7 +197,7 @@
                 Interested in collaboration or have questions about my research?
             </p>
             
-            <div class="flex flex-col md:flex-row justify-center items-start gap-12 mb-12">
+            <div class="flex justify-center items-start gap-12 mb-12">
                 <!-- Email Block -->
                 <div class="flex-1 text-center">
                     <div class="w-12 h-12 bg-dark-green-600 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -217,12 +217,19 @@
     </section>
 
     <script>
-        // Mobile menu toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
+        const mobileMenu       = document.getElementById('mobile-menu');
+
         mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('hidden');
+        });
+
+
+        mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {         
+            mobileMenu.classList.add('hidden');   
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
         });
 
         document.addEventListener('DOMContentLoaded', () => {
@@ -230,19 +237,19 @@
             if (!video) return;
 
             /* playback-rate control parameters */
-            const DURATION = 5000;      // ms for full transition
-            const RATE_START = 0.6;     // 2× speed at load
-            const RATE_MIN   = 0.6;     // dip to half-speed
-            const RATE_END   = 0.6;     // settle at normal speed
+            const DURATION = 5000;      
+            const RATE_START = 0.6;     
+            const RATE_MIN   = 0.6;   
+            const RATE_END   = 0.6;    
 
-            /* custom cubic dip-and-rise curve */
+
             function rateCurve(t) {
-                if (t < 0.5) {          // first half: 2.0 → 0.5
+                if (t < 0.5) {       
                     return RATE_START - (RATE_START - RATE_MIN) *
                         (1 - Math.pow(1 - t * 2, 3));
                 }
                 return RATE_MIN + (RATE_END - RATE_MIN) *
-                    Math.pow((t - 0.5) * 2, 3);   // second half: 0.5 → 1.0
+                    Math.pow((t - 0.5) * 2, 3);  
             }
 
             function animateRate(ts) {
@@ -252,12 +259,12 @@
                 if (t < 1) requestAnimationFrame(animateRate);
             }
 
-            /* kick off once the video can play */
+          
             const startAnimation = () => {
                 video.playbackRate = RATE_START;
                 requestAnimationFrame(animateRate);
             };
-            if (video.readyState >= 2) {     // already decoded
+            if (video.readyState >= 2) {   
                 startAnimation();
             } else {
                 video.addEventListener('canplay', startAnimation, { once: true });
